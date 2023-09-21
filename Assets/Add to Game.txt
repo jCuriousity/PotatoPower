@@ -1,0 +1,77 @@
+Add to Game----
+
+*Add Cool Katana Potato and Slicer
+*Chef Challenge
+Secret Key == 600d0cc7975d837de059b83a6d4be59990833a030f6a674ed5cd1c03a6dc830875c4b253596cbc978c13f36bde11ce482d8033d5e40069c755224a0303845c1223ab14001754747b92799acfe75a7678ea0d584fcac3372934fb953a3343059c973676b0c189daef49f5912e3bbdcc25a2da75d8d3152cf43d964fac08902edf
+if (gameData.hasGlowingKatana)
+        {
+            scoreHandler.ScoreChange(3);
+            //100% quad points
+        }
+        else if (gameData.hasKnife5)
+        {
+            if (random < 65)
+            {
+                scoreHandler.ScoreChange(1);
+            }
+
+            scoreHandler.ScoreChange(2);
+            //50% quad points
+            //100% trip
+
+        }
+        else if (gameData.hasKnife4)
+        {
+            if (random < 25)
+            {
+                scoreHandler.ScoreChange(3);
+            }
+            else if (random < 75)
+            {
+                scoreHandler.ScoreChange(2);
+            }
+            else
+            {
+                scoreHandler.ScoreChange(1);
+            }
+            
+
+            //25% quad points
+            //75% trip
+
+        }
+        else if (gameData.hasKnife3)
+        {
+            //100% dop
+            if (random < 50)
+            {
+                scoreHandler.ScoreChange(1);
+            }
+
+            scoreHandler.ScoreChange(1);
+            
+
+            //50% trip
+        }
+        else if (gameData.hasKnife2)
+        {
+            //75% dop
+            //10% trip
+            if (random < 10)
+            {
+                scoreHandler.ScoreChange(2);
+            }
+            else if (random < 75)
+            {
+                scoreHandler.ScoreChange(1);
+            }
+        }
+        else if (gameData.hasKnife1)
+        {
+            //50% dob
+            //0% trip
+            if (random < 50)
+            {
+                scoreHandler.ScoreChange(1);
+            }
+        }
