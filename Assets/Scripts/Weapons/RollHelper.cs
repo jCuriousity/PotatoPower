@@ -8,7 +8,7 @@ public static class RollHelper
     public static int Roll(List<(int outcome, float percent)> outcomes)
     {
         var roll = Random.Range(0.0f, 1.0f);
-        Debug.Log(roll);
+        
         foreach (var outcome in outcomes)
         {
             if (roll <= outcome.percent)
