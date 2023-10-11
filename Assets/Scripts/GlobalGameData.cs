@@ -33,6 +33,7 @@ public class GlobalGameData
     private static GlobalGameData _instance;
     public static GlobalGameData Instance { get => _instance ??= new GlobalGameData(); }
 
+    public bool firstTime = true;
     public int score {
         get => PlayerPrefs.GetInt("score", 0);
         set => PlayerPrefs.SetInt("score", value);
@@ -48,11 +49,11 @@ public class GlobalGameData
         set => _weapon = value;
     }
 
-    public bool firstTime
-    {
-        get => PlayerPrefs.GetInt("firstTime", 0) == 1;
-        set => PlayerPrefs.SetInt("firstTime", value ? 1 : 0);
-    }
+    //public bool firstLaunch
+    //{
+        //get => PlayerPrefs.GetInt("firstTime", 0) == 1;
+        //set => PlayerPrefs.SetInt("firstTime", value ? 1 : 0);
+    //}
 
     public int ccScore {
         get => PlayerPrefs.GetInt("cc_score", 0);

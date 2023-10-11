@@ -13,6 +13,7 @@ public class OpenScenes : MonoBehaviour
     void Start()
     {
         rYaSure.SetActive(false);
+        
     }
 
     // Update is called once per frame

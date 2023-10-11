@@ -684,6 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 449431776}
+  targetScene: Chef Challenge
   startScene: {fileID: 1037888432}
 --- !u!114 &1037888432
 MonoBehaviour:
@@ -965,10 +966,10 @@ MonoBehaviour:
   GKPotato: {fileID: 2479288972039733754, guid: d2e86d8eb222a494aae61c9fbd1157cc, type: 3}
   potatoDelay: 1
   moldyDelay: 6
-  gkDelay: 1000
+  gkDelay: 500
   potatoSpeed: 4
   moldySpeed: 10
-  gkSpeed: 1000
+  gkSpeed: 12
 --- !u!1 &1419559775
 GameObject:
   m_ObjectHideFlags: 0
