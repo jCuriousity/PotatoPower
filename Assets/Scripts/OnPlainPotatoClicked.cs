@@ -28,22 +28,22 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
     public virtual void CustomPointerDown()
     {
         scoreHandler.ScoreChange(gameData.weapon.CalculateScoreChange());
-        
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
         if (Time.timeScale < 3)
         {
-            Time.timeScale = 1.0f + 0.0001f * gameData.score;
+            Time.timeScale = 1.0f + 0.00009f * gameData.score;
         }
     }
 

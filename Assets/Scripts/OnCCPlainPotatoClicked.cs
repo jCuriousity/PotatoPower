@@ -40,7 +40,7 @@ public class OnCCPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
 
         if (Time.timeScale < 3)
         {
-            Time.timeScale = 1.0f + 0.0001f * gameData.score;
+            Time.timeScale = 1.0f + 0.00005f * gameData.score;
         }
     }
 

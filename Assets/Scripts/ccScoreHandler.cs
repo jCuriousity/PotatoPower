@@ -17,7 +17,10 @@ public class ccScoreHandler : MonoBehaviour
     
     void Start()
     {
-        
+        if (Time.timeScale < 3)
+        {
+            Time.timeScale = 1.0f + 0.00005f * gameData.score;
+        }
     }
 
     // Update is called once per frame

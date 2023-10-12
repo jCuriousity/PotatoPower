@@ -21,7 +21,10 @@ public class ScoreHandler : MonoBehaviour
     
     void Start()
     {
-        
+        if (Time.timeScale < 3)
+        {
+            Time.timeScale = 1.0f + 0.00009f * gameData.score;
+        }
     }
 
     // Update is called once per frame

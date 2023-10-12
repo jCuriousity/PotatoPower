@@ -13,7 +13,7 @@ public static class RollHelper
         {
             if (roll <= outcome.percent)
             {
-                Debug.Log(outcome);
+                
                 return outcome.outcome;
             }
         }

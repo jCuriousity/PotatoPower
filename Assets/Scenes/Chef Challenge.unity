@@ -965,10 +965,10 @@ MonoBehaviour:
   GKPotato: {fileID: 2479288972039733754, guid: 61ffd07b159004c45b24cc5813ba5ee9, type: 3}
   potatoDelay: 1
   moldyDelay: 6
-  gkDelay: 10
-  potatoSpeed: 2
-  moldySpeed: 1
-  gkSpeed: 5
+  gkDelay: 6
+  potatoSpeed: 0.5
+  moldySpeed: 1.75
+  gkSpeed: 0.05
 --- !u!1 &1419559775
 GameObject:
   m_ObjectHideFlags: 0

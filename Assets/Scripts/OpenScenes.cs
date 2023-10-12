@@ -95,10 +95,7 @@ public class OpenScenes : MonoBehaviour
         SceneManager.LoadScene("Chef Challenge");
     }
 
-    public void RickRoll()
-    {
-        Application.OpenURL("https://youtu.be/dQw4w9WgXcQ?si=Z0Bz9P_bJiSqZiSC");
-    }
+    
 
     public void OpenStartScene()
     {
