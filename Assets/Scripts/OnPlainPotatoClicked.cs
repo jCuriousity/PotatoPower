@@ -43,7 +43,7 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
 
         if (Time.timeScale < 3)
         {
-            Time.timeScale = 1.0f + 0.00009f * gameData.score;
+            Time.timeScale = 1.0f + 0.00006f * gameData.score;
         }
     }
 
@@ -61,6 +61,7 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         if (this.transform.position.y < -6)
         {
             Destroy(this.gameObject);
+            scoreHandler.ScoreChange(Mathf.RoundToInt(Random.Range(-1, 0)));
         }
 
         random = Mathf.Round(Random.Range(1, 100));

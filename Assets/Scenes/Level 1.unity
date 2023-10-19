@@ -964,12 +964,15 @@ MonoBehaviour:
   plainPotato: {fileID: 2479288972039733754, guid: 0a779456cd21960458cf40f061b10805, type: 3}
   moldyPotato: {fileID: 2479288972039733754, guid: bced776354e922648a5ebe995222a728, type: 3}
   GKPotato: {fileID: 2479288972039733754, guid: d2e86d8eb222a494aae61c9fbd1157cc, type: 3}
+  superPotato: {fileID: 2479288972039733754, guid: 14a966621d5caf041ac6a90f5cdd4865, type: 3}
   potatoDelay: 1
   moldyDelay: 3
   gkDelay: 500
+  superDelay: 15
   potatoSpeed: 1.25
   moldySpeed: 0.75
   gkSpeed: 1
+  superSpeed: 1
 --- !u!1 &1419559775
 GameObject:
   m_ObjectHideFlags: 0

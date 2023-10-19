@@ -942,7 +942,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: No Negative Damage
+  m_Text: No Negative Damage from Moldy Potatoes
 --- !u!222 &556112779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2633,8 +2633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 144, y: 32.626526}
-  m_SizeDelta: {x: 164.0392, y: 34.7469}
+  m_AnchoredPosition: {x: 138, y: 43.956}
+  m_SizeDelta: {x: 170.2682, y: 40.2723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1623854562
 MonoBehaviour:
@@ -2660,7 +2660,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 9ce8824bd0a59fa40b9cf7a8b9be3dcc, type: 3}
     m_FontSize: 23
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 1
@@ -2669,7 +2669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Katana of Ages
+  m_Text: Legendary Glowing Katana
 --- !u!222 &1623854563
 CanvasRenderer:
   m_ObjectHideFlags: 0
