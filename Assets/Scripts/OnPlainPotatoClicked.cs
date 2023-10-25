@@ -61,7 +61,7 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         if (this.transform.position.y < -6)
         {
             Destroy(this.gameObject);
-            scoreHandler.ScoreChange(Mathf.RoundToInt(Random.Range(-1, 0)));
+            
         }
 
         random = Mathf.Round(Random.Range(1, 100));
