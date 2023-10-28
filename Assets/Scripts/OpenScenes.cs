@@ -107,4 +107,9 @@ public class OpenScenes : MonoBehaviour
         SceneManager.LoadScene("ShareScene");
     }
 
+    public void OpenCodeNinjasOnWeb()
+    {
+        Application.OpenURL("https://www.codeninjas.com/");
+    }
+
 }

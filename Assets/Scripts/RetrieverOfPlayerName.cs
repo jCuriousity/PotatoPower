@@ -29,10 +29,6 @@ public class RetrieverOfPlayerName : MonoBehaviour
             RRCheck = true;
         }
 
-        if (playerName.text == "Dinnerbone" && !RRCheck)
-        {
-            Application.OpenURL("https://th.bing.com/th/id/OIP.F0mIB5kWOldDWtdyWipr2AHaD3?pid=ImgDet&rs=1");
-            RRCheck = true;
-        }
+       
     }
 }

@@ -1022,7 +1022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Weaponry Details
+  m_Text: Utensil Details
 --- !u!222 &576704244
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1512,8 +1512,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: 6.4469}
-  m_SizeDelta: {x: 139.3515, y: 34.7469}
+  m_AnchoredPosition: {x: 158.88321, y: 6.4469}
+  m_SizeDelta: {x: 181.1179, y: 34.7469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662277846
 MonoBehaviour:
@@ -1540,7 +1540,7 @@ MonoBehaviour:
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1548,7 +1548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 50% Chance of Double Points
+  m_Text: 50% Chance of Double Points (when Smashing Potatoes)
 --- !u!222 &662277847
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2890,8 +2890,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: -28.3}
-  m_SizeDelta: {x: 139.3515, y: 34.7469}
+  m_AnchoredPosition: {x: 144.60583, y: -28.3}
+  m_SizeDelta: {x: 152.5632, y: 34.7469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1904065043
 MonoBehaviour:
@@ -2941,7 +2941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0% Chance of Triple Points
+  m_Text: 0% Chance of Triple Points (when Smashing Potatoes)
 --- !u!222 &1904065045
 CanvasRenderer:
   m_ObjectHideFlags: 0
