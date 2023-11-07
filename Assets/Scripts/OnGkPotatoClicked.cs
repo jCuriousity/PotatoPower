@@ -20,8 +20,10 @@ public class OnGkPotatoClicked : OnPlainPotatoClicked
 
         gameData.boughtWeapon =  Weapons.KnifeGK;
         gameData.weapon = new KnifeGK();
+        gameData.gameSpeed = 4.0f;
 
-        print("Yee hast unlock doth of thine ancient weapon.");
+
+
 
 
 

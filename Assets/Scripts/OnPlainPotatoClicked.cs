@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +9,7 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private ParticleSystem smoke;
+    
     private bool isClickable = true;
     private GlobalGameData gameData = GlobalGameData.Instance;
     protected float random = 0;
@@ -24,27 +22,15 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
 
         CustomPointerDown();
     }
-    
+
     public virtual void CustomPointerDown()
     {
         scoreHandler.ScoreChange(gameData.weapon.CalculateScoreChange());
 
+        Time.timeScale = gameData.gameSpeed;
 
 
 
-
-
-
-
-
-
-
-
-
-        if (Time.timeScale < 3)
-        {
-            Time.timeScale = 1.0f + 0.00006f * gameData.score;
-        }
     }
 
     protected virtual void Start()
@@ -53,6 +39,9 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         smoke = GetComponent<ParticleSystem>();
         smoke.Stop();
         scoreHandler = Object.FindObjectOfType<ScoreHandler>();
+        
+        
+        
     }
 
     // Update is called once per frame
@@ -61,13 +50,13 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         if (this.transform.position.y < -6)
         {
             Destroy(this.gameObject);
-            
+
         }
 
         random = Mathf.Round(Random.Range(1, 100));
     }
 
 
-    
-   
+
+
 }

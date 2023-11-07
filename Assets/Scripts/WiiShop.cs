@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,7 +39,7 @@ public class WiiShop : MonoBehaviour
         {
             case Weapons.KnifeGK:
                 goto case Weapons.Knife5;
-            
+
             case Weapons.Knife5:
                 knife5Text.text = "Owned";
                 goto case Weapons.Knife4;
@@ -83,6 +80,7 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife1;
             gameData.weapon = new Knife1();
             gameData.score -= 50;
+            gameData.gameSpeed = 1.5f;
             UpdateText();
         }
     }
@@ -94,6 +92,7 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife2;
             gameData.weapon = new Knife2();
             gameData.score -= 125;
+            gameData.gameSpeed = 2.0f;
             UpdateText();
         }
     }
@@ -105,6 +104,7 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife3;
             gameData.weapon = new Knife3();
             gameData.score -= 275;
+            gameData.gameSpeed = 2.75f;
             UpdateText();
         }
     }
@@ -116,26 +116,25 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife4;
             gameData.weapon = new Knife4();
             gameData.score -= 550;
+            gameData.gameSpeed = 3.5f;
             UpdateText();
         }
     }
 
     public void Knife5()
     {
-        if (gameData.score > 1299 && gameData.boughtWeapon < Weapons.Knife5)
+        if (gameData.score > 1199 && gameData.boughtWeapon < Weapons.Knife5)
         {
             gameData.boughtWeapon = Weapons.Knife5;
             gameData.weapon = new Knife5();
-            gameData.score -= 1300;
+            gameData.score -= 1200;
+            gameData.gameSpeed = 4.0f;
             AfterLastKnife.SetActive(true);
             UpdateText();
         }
     }
 
-    public void NONONONONONONONONONONONONOSUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSUSUS()
-    {
-        gameData.score = 10000;
-    }
 
-    
+
+
 }

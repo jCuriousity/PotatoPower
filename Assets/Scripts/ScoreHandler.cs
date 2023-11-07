@@ -1,9 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
 
 public class ScoreHandler : MonoBehaviour
 {
@@ -19,7 +16,7 @@ public class ScoreHandler : MonoBehaviour
     public int score => gameData.score;
 
 
-    
+
 
 
     public OpenScenes startScene;
@@ -27,33 +24,30 @@ public class ScoreHandler : MonoBehaviour
 
     void Start()
     {
-        if (Time.timeScale < 3)
-        {
-            Time.timeScale = 1.0f + 0.00006f * gameData.score;
-        }
+        Time.timeScale = gameData.gameSpeed;
 
         var firstNames = new List<string>() { "Jeremy", "Jackson", "Vidya", "Kanha", "Julie", "Sammy", "Sasparilla", "Alexander", "Erik", "Mice", "Bellatrix", "Steve", "Bo", "Sus", "Ninja", "Vedant", "Trisha", "Shifts", "Thadius", "Bart", };
         var lastNames = new List<string>() { "deFrenchFry", "PotatoStein", "Tatergan II", "deYams", "Starcher", "SalidBalad", "noSmallPotatoes", "GraveyPants", "Butterup", "Spudzer", "deHesi-Tater", "Peeler", "SweetFry", "Rootquist", "Tateron II", "Mash-mallow", "Irelandish", "Cellulost", "Eyedon", "ToeSmash", "SquishTater" };
         scoreText.text = gameData.score.ToString();
         feedbackDisplay.text = "Redeem points in the shop!";
     }
-        
-        
+
+
 
 
 
     public void ScoreChange(int changeAmount)
-    {  
+    {
 
-        
-        
-        
+
+
+
 
         gameData.score += changeAmount;
         scoreText.text = gameData.score.ToString();
         if (gameData.score < 0)
         {
-                gameData.score = 0;
+            gameData.score = 0;
         }
 
         feedbackDisplay.text = "You chopped " + firstNames[Random.Range(0, 19)] + " " + lastNames[Random.Range(0, 20)] + "!";
@@ -61,12 +55,12 @@ public class ScoreHandler : MonoBehaviour
 
 
 
-        
-        
-        
+
+
+
 
     }
 
-    
+
 }
 

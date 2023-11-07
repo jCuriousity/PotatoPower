@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,11 +35,15 @@ public class GlobalGameData
     public static GlobalGameData Instance { get => _instance ??= new GlobalGameData(); }
 
     public bool firstTime = true;
-    public int score {
+
+    public float gameSpeed = 1.0f;
+    public int score
+    {
         get => PlayerPrefs.GetInt("score", 0);
         set => PlayerPrefs.SetInt("score", value);
     }
-    public Weapons boughtWeapon {
+    public Weapons boughtWeapon
+    {
         get => (Weapons)Enum.Parse(typeof(Weapons), PlayerPrefs.GetString("weapon", nameof(Weapons.Knife0)));
         set => PlayerPrefs.SetString("weapon", Enum.GetName(typeof(Weapons), value));
     }
@@ -49,16 +54,26 @@ public class GlobalGameData
         set => _weapon = value;
     }
 
-    //public bool firstLaunch
-    //{
-        //get => PlayerPrefs.GetInt("firstTime", 0) == 1;
-        //set => PlayerPrefs.SetInt("firstTime", value ? 1 : 0);
-    //}
+    public int BGcheck
+    {
+        get => PlayerPrefs.GetInt("BGcheck", 0);
+        set => PlayerPrefs.SetInt("BGcheck", value);
+    }
 
-    public int ccScore {
+    public int ccBGcheck
+    {
+        get => PlayerPrefs.GetInt("ccBGcheck", 0);
+        set => PlayerPrefs.SetInt("ccBGcheck", value);
+    }
+
+    public int ccScore
+    {
         get => PlayerPrefs.GetInt("cc_score", 0);
         set => PlayerPrefs.SetInt("cc_score", value);
     }
 
     public string PlayerName;
+
+    
 }
+
