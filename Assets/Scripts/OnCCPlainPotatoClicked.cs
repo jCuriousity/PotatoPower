@@ -12,12 +12,19 @@ public class OnCCPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
     private bool isClickable = true;
     private GlobalGameData gameData = GlobalGameData.Instance;
     protected float random = 0;
+    public AudioClip musicToPlay;
+    private AudioSource audioSource;
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!isClickable) return;
         spriteRenderer.enabled = false;
         smoke.Play();
         isClickable = false;
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = musicToPlay;
+        audioSource.loop = false;
+        audioSource.Play();
 
         CustomPointerDown();
     }
@@ -40,7 +47,7 @@ public class OnCCPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
 
         if (Time.timeScale < 3)
         {
-            Time.timeScale = 1.0f + 0.00005f * gameData.score;
+            Time.timeScale = 1.0f + 0.000025f * gameData.score;
         }
     }
 

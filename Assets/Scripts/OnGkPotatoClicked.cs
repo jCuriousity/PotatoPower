@@ -20,7 +20,10 @@ public class OnGkPotatoClicked : OnPlainPotatoClicked
 
         gameData.boughtWeapon =  Weapons.KnifeGK;
         gameData.weapon = new KnifeGK();
-        gameData.gameSpeed = 4.0f;
+        gameData.gameSpeed = 3.5f;
+        gameData.ccBGcheck = 1;
+        gameData.BGcheck = 1;
+
 
 
 

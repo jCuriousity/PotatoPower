@@ -80,7 +80,9 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife1;
             gameData.weapon = new Knife1();
             gameData.score -= 50;
-            gameData.gameSpeed = 1.5f;
+            gameData.gameSpeed = 1.25f;
+            gameData.BGcheck = 2;
+            gameData.ccBGcheck = 2;
             UpdateText();
         }
     }
@@ -92,7 +94,9 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife2;
             gameData.weapon = new Knife2();
             gameData.score -= 125;
-            gameData.gameSpeed = 2.0f;
+            gameData.gameSpeed = 1.75f;
+            gameData.BGcheck = 3;
+            gameData.ccBGcheck = 3;
             UpdateText();
         }
     }
@@ -104,7 +108,9 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife3;
             gameData.weapon = new Knife3();
             gameData.score -= 275;
-            gameData.gameSpeed = 2.75f;
+            gameData.gameSpeed = 2.0f;
+            gameData.BGcheck = 1;
+            gameData.ccBGcheck = 1;
             UpdateText();
         }
     }
@@ -116,7 +122,9 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife4;
             gameData.weapon = new Knife4();
             gameData.score -= 550;
-            gameData.gameSpeed = 3.5f;
+            gameData.gameSpeed = 2.5f;
+            gameData.BGcheck = 2;
+            gameData.ccBGcheck = 2;
             UpdateText();
         }
     }
@@ -128,8 +136,10 @@ public class WiiShop : MonoBehaviour
             gameData.boughtWeapon = Weapons.Knife5;
             gameData.weapon = new Knife5();
             gameData.score -= 1200;
-            gameData.gameSpeed = 4.0f;
+            gameData.gameSpeed = 3.0f;
             AfterLastKnife.SetActive(true);
+            gameData.BGcheck = 3;
+            gameData.ccBGcheck = 3;
             UpdateText();
         }
     }

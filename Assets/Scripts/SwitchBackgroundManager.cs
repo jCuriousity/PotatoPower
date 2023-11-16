@@ -12,24 +12,20 @@ public class SwitchBackgroundManager : MonoBehaviour
     private GlobalGameData gameData = GlobalGameData.Instance;
    
 
-    void Start()
+    
+
+    private void Update()
     {
         SwitchBG();
     }
 
+    
+
     // Update is called once per frame
     public void SwitchBG()
     {
-        if (gameData.BGcheck == 3)
-        {
-            gameData.BGcheck = 1;
-        }
-        else
-        {
-            gameData.BGcheck += 1;
-        }
-        
-       
+
+
 
         switch (gameData.BGcheck)
         {

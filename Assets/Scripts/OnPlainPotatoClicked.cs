@@ -9,7 +9,9 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
     private SpriteRenderer spriteRenderer;
     [SerializeField]
     private ParticleSystem smoke;
-    
+    public AudioClip musicToPlay;
+    private AudioSource audioSource;
+
     private bool isClickable = true;
     private GlobalGameData gameData = GlobalGameData.Instance;
     protected float random = 0;
@@ -20,6 +22,11 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         smoke.Play();
         isClickable = false;
 
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = musicToPlay;
+        audioSource.loop = false;
+        audioSource.Play();
+
         CustomPointerDown();
     }
 
@@ -28,6 +35,8 @@ public class OnPlainPotatoClicked : MonoBehaviour, IPointerDownHandler
         scoreHandler.ScoreChange(gameData.weapon.CalculateScoreChange());
 
         Time.timeScale = gameData.gameSpeed;
+
+        
 
 
 

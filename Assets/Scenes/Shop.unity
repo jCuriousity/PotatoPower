@@ -659,8 +659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 427.61414, y: 93.653}
+  m_AnchoredPosition: {x: 0, y: -5.9579}
+  m_SizeDelta: {x: 427.6141, y: 111.9158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316059757
 MonoBehaviour:
@@ -696,7 +696,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: You might've acquired all the knifes, but you still need to find the legendary
-    glowing katana!
+    glowing katana by finding the potato to the left!
 --- !u!222 &316059758
 CanvasRenderer:
   m_ObjectHideFlags: 0
